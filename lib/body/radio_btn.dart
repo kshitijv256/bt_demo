@@ -9,7 +9,7 @@ class RadioSelector extends StatefulWidget {
 }
 
 class _RadioSelectorState extends State<RadioSelector> {
-  var radio_value = 1;
+  dynamic radioValue = 1;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -35,12 +35,12 @@ class _RadioSelectorState extends State<RadioSelector> {
               children: [
                 Radio(
                   value: 1,
-                  groupValue: radio_value,
+                  groupValue: radioValue,
                   materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   activeColor: Colors.green,
                   onChanged: (e) {
                     setState(() {
-                      radio_value = e ?? 1;
+                      radioValue = e ?? 1;
                     });
                   },
                 ),
@@ -57,12 +57,12 @@ class _RadioSelectorState extends State<RadioSelector> {
               children: [
                 Radio(
                   value: 2,
-                  groupValue: radio_value,
+                  groupValue: radioValue,
                   materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                   activeColor: Colors.red,
                   onChanged: (e) {
                     setState(() {
-                      radio_value = e ?? 1;
+                      radioValue = e ?? 1;
                     });
                   },
                 ),

@@ -8,7 +8,7 @@ class Payments extends StatefulWidget {
 }
 
 class _PaymentsState extends State<Payments> {
-  var radio_value;
+  dynamic radioValue;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -37,12 +37,12 @@ class _PaymentsState extends State<Payments> {
                   children: [
                     Radio(
                       value: 1,
-                      groupValue: radio_value,
+                      groupValue: radioValue,
                       materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                       activeColor: Colors.green,
                       onChanged: (e) {
                         setState(() {
-                          radio_value = e ?? 1;
+                          radioValue = e ?? 1;
                         });
                       },
                     ),
@@ -59,12 +59,12 @@ class _PaymentsState extends State<Payments> {
                   children: [
                     Radio(
                       value: 2,
-                      groupValue: radio_value,
+                      groupValue: radioValue,
                       materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
                       activeColor: Colors.green,
                       onChanged: (e) {
                         setState(() {
-                          radio_value = e ?? 1;
+                          radioValue = e ?? 1;
                         });
                       },
                     ),

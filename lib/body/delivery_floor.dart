@@ -9,7 +9,7 @@ class DeliveryFloor extends StatefulWidget {
 
 class _DeliveryFloorState extends State<DeliveryFloor> {
   List floors = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  var selectedFloor;
+  dynamic selectedFloor;
   @override
   Widget build(BuildContext context) {
     List<DropdownMenuItem> dropdownItems = floors
@@ -55,11 +55,11 @@ class _DeliveryFloorState extends State<DeliveryFloor> {
             Container(
               margin: const EdgeInsets.only(right: 8.0),
               child: Text('₹ ${5 * selectedFloor}',
-                  style: TextStyle(fontSize: 20, color: Colors.black)),
+                  style: const TextStyle(fontSize: 20, color: Colors.black)),
             ),
           ],
         ),
-        Text("(₹5 per floor)"),
+        const Text("(₹5 per floor)"),
         const SizedBox(
           height: 5,
         ),

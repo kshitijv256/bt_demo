@@ -9,8 +9,8 @@ class NumOfCans extends StatefulWidget {
 
 class _NumOfCansState extends State<NumOfCans> {
   List cans = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  var bisleriCan;
-  var aquafinaCan;
+  dynamic bisleriCan;
+  dynamic aquafinaCan;
   @override
   Widget build(BuildContext context) {
     List<DropdownMenuItem> dropdownItems = cans

@@ -103,14 +103,6 @@ class PageLayout extends StatelessWidget {
             ),
             ElevatedButton(
               onPressed: null,
-              child: const Text(
-                "Submit",
-                style: TextStyle(
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(Colors.blue),
                 padding: MaterialStateProperty.all(const EdgeInsets.all(16.0)),
@@ -121,6 +113,14 @@ class PageLayout extends StatelessWidget {
                 ),
                 minimumSize:
                     MaterialStateProperty.all(const Size(double.infinity, 60)),
+              ),
+              child: const Text(
+                "Submit",
+                style: TextStyle(
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
               ),
             ),
             const SizedBox(
